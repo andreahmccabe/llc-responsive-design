@@ -26,8 +26,10 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <!-- <h2>Get <br>Connected</h2>
-        <p><strong>Wifi:</strong> wifi network</p>
-        <p><strong>Password:</strong> wifi password</p>
+        <ul>
+          <li><strong>Wifi:</strong> wifi network</li>
+          <li><strong>Password:</strong> wifi password</li>
+        </ul>
         <hr> -->
 
         <h2>Download<br> & Install</h2>
@@ -35,7 +37,7 @@
           <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-responsive-design/archive/master.zip">bit.ly/llc-responsive</a>
             <ul>
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <strong>slides.html</strong> in the browser to view the slides</li>
+              <li>open <code>slides.html</code> in the browser to view the slides</li>
             </ul>
           </li>
           <li>Atom Text Editor: <a href="http://atom.io">atom.io</a>
@@ -96,9 +98,9 @@
       <script type="text/template">
         #Today's Project
 
-        For today's final project, we'll take an existing web page and optimize it for different screen sizes. Follow [this link](project/final.html) to see the whole project!
+        For today's final project, we'll take an existing web page and optimize it for different screen sizes. [Review the final project](project/final.html)!
 
-        ![final project](framework/img/workshop/final-project.jpg)
+        ![Final project fully styled. Screen on left depects widescreen, multi-column layout, on the right depicts a mobile, single solumn layout.](framework/img/workshop/final-project.jpg)
       </script>
     </section>
 
@@ -116,7 +118,7 @@
 
       **[Atom](https://atom.io/)** - a text editor with colour highlighting and other useful features.
 
-      If you are unable to install Atom, try installing: <!-- .element: class="note" -->[Notepad++](http://notepad-plus-plus.org/) (Windows), [Sublime Text](http://www.sublimetext.com) (Mac or Windows) or [Text Wrangler](http://www.barebones.com/products/textwrangler/download.html) (older Macs).
+      If you are unable to install Atom, try installing: <!-- .element: class="note" -->[VS Code](https://code.visualstudio.com/), [Notepad++](http://notepad-plus-plus.org/) (Windows), or [Sublime Text](http://www.sublimetext.com).
 
       **[Google Chrome](https://www.google.com/intl/en-CA/chrome/browser/)** - Choose a modern web browser that supports current web standards and has good development tools.
 
@@ -135,12 +137,17 @@
       **Developer tools** can be used to *inspect* any web page and also includes a *mobile device emulator*. Access the tool in 2 ways:
 
       * Right-click / two-finger tap on any web page. Select **Inspect**.
-      * keyboard shortcut: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
+      * keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> (PC) / <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> (Mac)
 
-      ![](framework/img/workshop/dev-tools-emulator.jpg)
+      ![Chrome devtools with device toolbar toggle button highlighted.](framework/img/workshop/dev-tools-emulator.jpg)
+
       Once open, click on the the phone icon to start the emulator. The icon will change to blue. Click it again to turn it off.
 
-      <!-- .element: class="note" --> **Pro tip!** Features are always being added/updated so make sure you're up to date by copying`chrome://chrome/` into your browser address bar.
+      ---
+
+      ## Pro tip!
+
+      Features are always being added/updated so make sure you're up to date by copying `chrome://chrome/` into your browser address bar.
       </script>
     </section>
 
@@ -158,14 +165,14 @@
 
         Fixed/Static, Fluid/Liquid, Adaptive, Responsive
 
-        > Let's take a look at and discuss this example: http://www.liquidapsive.com/
+        > Let's take a look at and discuss this example: [liquidapsive.com](http://www.liquidapsive.com/)
         >
         > Make your browser window bigger and smaller.  How do the different designs styles change?
 
         ---
-        ###Resources
-        * Read the [article](http://alistapart.com/article/responsive-web-design) that started the Responsive Design movement.
-        * [http://liquidapsive.com](http://liquidapsive.com/)
+        ## Resources
+        * Read the article that started the [Responsive Web Design](http://alistapart.com/article/responsive-web-design) movement.
+        * [liquidapsive.com](http://liquidapsive.com/)
         * [9 basic principles of responsive web design](http://blog.froont.com/9-basic-principles-of-responsive-web-design/)
       </script>
     </section>
@@ -174,10 +181,10 @@
       <script type="text/template">
       #Fixed Web Design
 
-      *   Everything has a set width (eg. 960px).
+      *   Everything has a set width (eg. `960px`).
       *   Popular method before mobile browsing became commonplace.
       *   On a mobile screen, it is zoomed out to the size of the device making the content really small.
-      *   Needs a separate site, usually an "m dot" site, to make something mobile friendly :(
+      *   Needs a separate site, usually an "m dot" site, to make something mobile friendly. 🙁
 
       > Try opening these sites on your phone or resize the browser. What are the differences?
       [m.facebook.com](https://m.facebook.com/), [facebook.com](https://facebook.com)
@@ -192,7 +199,7 @@
         *   When you resize the browser, the blocks will resize *relative* to the size of the page (aka the "viewport").
         *   Not optimized for smaller screens & mobile devices.
 
-        >Let's take a look at an example [here](http://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html).  Try making your browser window bigger and smaller.  What happens to the page layout?
+        > [Let's review an example](http://alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html).  Try making your browser window bigger and smaller.  What happens to the page layout?
 
       </script>
     </section>
@@ -206,7 +213,7 @@
       *   The content itself changes.
       *   Best to think of it as a _set_ of fixed layouts that are invoked in response to the device size.
 
-      >Let's take a look at an example [here](http://www.screamingfrog.co.uk/). Try making your browser window bigger and smaller. How is this different from the fluid layout?
+      > [Let's review an example](http://www.screamingfrog.co.uk/). Try making your browser window bigger and smaller. How is this different from the fluid layout?
       </script>
     </section>
 
@@ -236,8 +243,8 @@
       *   *graceful degradation* and *progressive enhancement*
 
       ---
-      ###Resource
-      [Mobile First Design: Why It’s Great and Why It Sucks](http://designshack.net/articles/css/mobilefirst/)
+      ## Resource
+      - [Mobile First Design: Why It’s Great and Why It Sucks](http://designshack.net/articles/css/mobilefirst/)
       </script>
     </section>
 
@@ -277,9 +284,9 @@
 
         More resources:
 
-        * [http://www.sitepoint.com/web-foundations/elements/](http://www.sitepoint.com/web-foundations/elements/)
-        * [http://websitesetup.org/html5-cheat-sheet/](http://websitesetup.org/html5-cheat-sheet/)
-        * [html-elements.txt](project/html-elements.txt), located in your **project** folder
+        * [sitepoint.com/web-foundations/elements](http://www.sitepoint.com/web-foundations/elements/)
+        * [websitesetup.org/html5-cheat-sheet](http://websitesetup.org/html5-cheat-sheet/)
+        * [html-elements.txt](project/html-elements.txt), located in your `project` folder
 
         Let's go over some commonly used tags.
       </script>
@@ -398,21 +405,20 @@
 
         Here are two more attributes, mostly used for CSS styling.
 
-        **class** - can be used multiple times per page
+        1. `class` - can be used multiple times per page
 
-        ```xml
-        <div class="column">Class example</div>
-        ```
+          ```xml
+          <div class="column">Class example</div>
+          ```
+        2. `id` - can be used for CSS styling, in-page links and only once per page
 
-        **id** - can be used for CSS styling, in-page links and only once per page
-
-        ```xml
-        <div id="about">About section</div>
-        ```
+          ```xml
+          <div id="about">About section</div>
+          ```
 
         ---
-        ###Resource
-        [HTML attribute reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) of all of them!
+        ## Resource
+        - [HTML attribute reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) of all of them!
       </script>
     </section>
 
@@ -491,26 +497,26 @@
       <script type="text/template">
       #Open the project files
 
-      Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
+      1. Inside of the folder you downloaded today, open the `project` folder in your text editor to edit your project.
 
-      ```
-      llc-responsive-design-master
-        |-- framework // Contains files needed for slide presentation. Do not edit!
-        |-- project // Contains the exercise files for this workshop. (images, CSS & HTML files)
-        |-- slides.html // This is the file you are viewing right now!
-      ```
+        ```
+        llc-responsive-design-master
+          |-- framework // Contains files needed for slide presentation. Do not edit!
+          |-- project // Contains the exercise files for this workshop. (images, CSS & HTML files)
+          |-- slides.html // This is the file you are viewing right now!
+        ```
 
-      Go to **File** > ** Add Project Folder**. A popup will appear.
+      2. Go to **File** > ** Add Project Folder**. A popup will appear.
 
-      ![](framework/img/workshop/editor-add-project-1.jpg)
+        ![](framework/img/workshop/editor-add-project-1.jpg)
 
-      Then, navigate to the **llc-responsive-design-master** folder, select the **project** and click **Open**.
+      3. Then, navigate to the `llc-responsive-design-master` folder, select the `project` folder and click **Open**.
 
-      ![](framework/img/workshop/editor-add-project-2.jpg)
+        ![](framework/img/workshop/editor-add-project-2.jpg)
 
-      The folder and included files will appear in the text editor's side bar. Double click on **index.html** to open it.
+      4. The folder and included files will appear in the text editor's side bar. Double click on `index.html` to open it.
 
-      ![](framework/img/workshop/editor-add-project-3.jpg)
+        ![](framework/img/workshop/editor-add-project-3.jpg)
       </script>
     </section>
 
@@ -520,21 +526,21 @@
 
         Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
 
-        Go to **Preferences** to open the customization options.<br />
+        1. Go to **Preferences** to open the customization options.<br />
         For Windows Users, go to the **File** menu and choose Settings.
 
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
 
-        Select the **Editor** tab in the left menu
+        2. Select the **Editor** tab in the left menu
 
-        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
-        Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
+        3. Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
 
-        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+          ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
 
         ---
-        ###Resources
+        ## Resources
 
         *   [Atom documentation](https://atom.io/docs)
         *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
@@ -607,7 +613,7 @@
         * there are MANY CSS properties, see resource below
 
         ---
-        ###Resource
+        ## Resource
         [Mozilla Developer Network: CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
       </script>
     </section>
@@ -758,15 +764,15 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Class exercise: Reference the CSS
 
-        Go back to your text editor and make sure **index.html** is open. Let's link the existing CSS file, **styles.css** and see what happens!
+        Go back to your text editor and make sure `index.html` is open. Let's link the existing CSS file, `styles.css` and see what happens!
 
         Use the `<link>` tag to reference the file.
-        <span class="note">**Pro tip!** For a shortcut, type "link" + tab key. Ta da!</span>
+
+        <span class="note">**Pro tip!** For a shortcut, type "link" + <kbd>Tab</kbd> key. Ta da!</span>
 
         ```
         <link rel="stylesheet" href="css/styles.css">
         ```
-
 
         > The styles are there but try resizing the browser.  What happens?
       </script>
@@ -776,9 +782,9 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Class exercise: Change the background image
 
-        There are several to choose from in your project, in the **images** folder, all starting with the prefix "background-".
+        There are several to choose from in your project, in the `images` folder, all starting with the prefix "background-".
 
-        Look for the `body` selector, near the top of the **styles.css** file and change the image file name.
+        Look for the `body` selector, near the top of the `styles.css` file and change the image file name.
 
         ```
         body {
@@ -796,7 +802,7 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #CSS Inheritance
 
-        In **styles.css**, the `body` selector also contains a `font-family` property.
+        In `styles.css`, the `body` selector also contains a `font-family` property.
 
         ```css
         body {
@@ -837,9 +843,8 @@ selector { /* select the paragraph inside of the about element */
         ```
 
         ---
-        ###Resources
-        * https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
-        * http://www.sitepoint.com/web-foundations/specificity/
+        ## Resources
+        * [MDN: CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
       </script>
     </section>
 
@@ -856,7 +861,8 @@ selector { /* select the paragraph inside of the about element */
         A fluid layout using percentages + media queries = responsive design
 
         Here's how a fixed width project looks in a larger resolution. Not bad.
-        ![](framework/img/workshop/not-fluid-1.png) <!-- .element: width="70%" -->
+
+        ![Two column layout; photo on left, text content on right.](framework/img/workshop/not-fluid-1.png) <!-- .element: width="70%" -->
       </script>
     </section>
 
@@ -865,11 +871,12 @@ selector { /* select the paragraph inside of the about element */
         #Percentages
 
         Smaller resolutions, not so good. The content gets cut off and you'll have to scroll horizontally to see the rest of the content.
-        ![](framework/img/workshop/not-fluid-2.png) <!-- .element: width="475" -->
+
+        ![Right column text content is cut off.](framework/img/workshop/not-fluid-2.png) <!-- .element: width="475" -->
 
         On the phone, it's even worse! (Screen shot from Chrome's emulator dev tool - more on this later.) It's zoomed out to fit into the devices screen size so everything looks small.
 
-        ![](framework/img/workshop/not-fluid-3.png)<!-- .element: width="350" -->
+        ![Vue mobile révélant un texte trop petit.](framework/img/workshop/not-fluid-3.png)<!-- .element: width="350" -->
       </script>
     </section>
 
@@ -877,7 +884,7 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Class exercise: Percentages first, then media queries
 
-        In **styles.css**, look for this code block. Notice that the width is set to a fixed width of 1000px.  That means no matter what, that container will always be 1000px.
+        In `styles.css`, look for this code block. Notice that the width is set to a fixed width of `1000px`.  That means no matter what, that container will always be `1000px`.
 
         ```css
         .content-wrap {
@@ -887,7 +894,7 @@ selector { /* select the paragraph inside of the about element */
         }
         ```
 
-        <!-- .element: class="note" -->**Pro tip!** In Atom, select **Find > Find in Buffer**  OR ctrl/cmnd + F &mdash; this will open a bar at the bottom of the screen.  Type in **.content-wrap** and select **Find**.  This will make it easier to search for code snippets.
+        <!-- .element: class="note" -->**Pro tip!** In Atom, select **Find > Find in Buffer**  OR <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>F</kbd> &mdash; this will open a bar at the bottom of the screen.  Type in **.content-wrap** and select **Find**.  This will make it easier to search for code snippets.
 
         Let's change it to `max-width: 1000px;` and also add `width: 80%;` and see how that changes the page.
       </script>
@@ -909,8 +916,8 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Responsive Change
 
-        ![](framework/img/workshop/profile-left.png)
-        ![](framework/img/workshop/profile-right.png)
+        ![Wide display; image on left, content on right.](framework/img/workshop/profile-left.png)
+        ![Less wide display; image on right, content on left.](framework/img/workshop/profile-right.png)
 
         This is an example of a responsive change because the image *changes* size and from left to right. Let's look at how we can target different screen sizes with media queries, to make this kind of change.
       </script>
@@ -931,7 +938,7 @@ selector { /* select the paragraph inside of the about element */
           }
         }
         ```
-        In the above we target all [media types](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) and the max-width of 940px. Anything *equal to* or *less than* 940px wide will apply this CSS.
+        In the above we target all [media types](https://developer.mozilla.org/en-US/docs/Web/CSS/@media) and the max-width of `940px`. Anything *equal to* or *less than* `940px` wide will apply this CSS.
       </script>
     </section>
 
@@ -970,7 +977,7 @@ selector { /* select the paragraph inside of the about element */
         /* any screen 941px and above */
       }
       ```
-      >Why do you think 941px was used for min-width instead of 940px in the above example?
+      >Why do you think `941px` was used for min-width instead of `940px` in the above example?
       </script>
     </section>
 
@@ -988,8 +995,8 @@ selector { /* select the paragraph inside of the about element */
 
         This will only be applied when the width of the browser that is:
 
-        *  greater than or equal to 768px
-        *  less than or equal to 940px
+        *  greater than or equal to `768px`
+        *  less than or equal to `940px`
       </script>
     </section>
 
@@ -1054,12 +1061,12 @@ selector { /* select the paragraph inside of the about element */
 
         Trying to target a specific device is tricky because there are so many. Here are some to general guidelines to consider:
 
-        320px — Mobile portrait<br>
-        480px — Mobile landscape<br>
-        600px — Small tablet<br>
-        768px — Tablet portrait<br>
-        940px - 1024px — Tablet landscape, small desktop<br>
-        1280px & greater — Desktop
+        - `320px` — Mobile portrait<br>
+        - `480px` — Mobile landscape<br>
+        - `600px` — Small tablet<br>
+        - `768px` — Tablet portrait<br>
+        - `940px` - `1024px` — Tablet landscape, small desktop<br>
+        - `1280px` & greater — Desktop
 
         <!-- .element: class="note" -->**Pro tips!** Use fluid CSS whenever possible, add a breakpoint when the design breaks or no longer suitable for that viewport. Also, be careful about using too many breakpoints. If you have two media queries close in size, try moving the styles to one or the other.
       </script>
@@ -1079,8 +1086,8 @@ selector { /* select the paragraph inside of the about element */
         Change your accent colour! Using Chrome's dev tools, *inspect* any element that has a colour, (e.g. the "Hello" background or a link) to see if you can figure out where the blue CSS color is coming from and change it to your own colour choice.
 
         ---
-        ###Resource
-        * http://colours.neilorangepeel.com/
+        ## Resource
+        * [Named Colors and Hex Equivalents](https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/)
       </script>
     </section>
 
@@ -1124,14 +1131,14 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Testing: Device Mode
 
-        Let's take a look at how our project looks so far on a mobile device.
+        Let's review how our project looks so far on a mobile device.
 
-        *   right click anywhere in the browser viewport & select **Inspect**
-        *   click the phone icon to start the emulator (icon will be blue)
-        *   click it again to turn it off
-        *   refresh the browser
+        1. right click anywhere in the browser viewport & select **Inspect**
+        2. click the phone icon to start the emulator (icon will be blue)
+        3. click it again to turn it off
+        4. refresh the browser
 
-        ![](framework/img/workshop/dev-tools-emulator.jpg)
+        ![Chrome devtools with device toolbar toggle button highlighted.](framework/img/workshop/dev-tools-emulator.jpg)
       </script>
     </section>
 
@@ -1141,11 +1148,11 @@ selector { /* select the paragraph inside of the about element */
 
         Why does it look like just a smaller version of the desktop site?
 
-        ![](framework/img/workshop/emulator-test-1.png)
+        ![Chrome Devtools phone emulator on left seto to 100% zoom. On right, Devtools element inspector.](framework/img/workshop/emulator-test-1.png)
 
         ---
-        ###Resource
-        More about Chrome DevTools' Device Mode [here](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/).
+        ## Resource
+        - [Chrome DevTools' Device Mode](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/)
       </script>
     </section>
 
@@ -1207,7 +1214,7 @@ selector { /* select the paragraph inside of the about element */
 
         Using the dev tools, we've determined where and what changes to make. Take this time to try the instructions below to add these updates to your project.  Work with a partner or with a mentor!
 
-        1. Add a media query with a breakpoint around 768px - 900px-ish
+        1. Add a media query with a breakpoint around `768px` - `900px`-ish
         1. Adjust the `.profile-image` rule to:
           * increase the profile image width;
           * make the image appear on the right.
@@ -1296,7 +1303,7 @@ selector { /* select the paragraph inside of the about element */
           * Adjust the width of the `.details` and `.description`.
           * Remove/update the padding and margins.
 
-        <!-- .element: class="note" -->**Pro tip!** Only use the properties that need to be changed.  For example, if the font-size doesn't need to be change, no need to add it to the media query.
+        <!-- .element: class="note" -->**Pro tip!** Only use the properties that need to be changed.  For example, if the `font-size` doesn't need to be changed, no need to add it to the media query.
 
         Solution CSS on the next slide but try not to peek!
       </script>
@@ -1308,7 +1315,7 @@ selector { /* select the paragraph inside of the about element */
 
       Let's go over the solution for the previous slide's exercise.
 
-      This could be included in either the 600px - 800px media query, depending on your design preference.
+      This could be included in either the `600px` - `800px` media query, depending on your design preference.
 
       ```css
       .item {
@@ -1348,7 +1355,7 @@ selector { /* select the paragraph inside of the about element */
 
         ![](framework/img/workshop/header-tablet.png)
 
-        At around a 600px resolution, the header area becomes hard to read and takes up a lot of space for a smaller screen.
+        At around a `600px` resolution, the header area becomes hard to read and takes up a lot of space for a smaller screen.
 
         That should be updated to make better use of the space for that resolution.
 
@@ -1360,10 +1367,10 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Exercise: Update the header (~20mins)
 
-        Make these changes in the 600px media query.
+        Make these changes in the `600px` media query.
 
         1. Reduce the padding in the `header`.
-        1. Change the font-size of the h1 and h2 BUT make sure to target only the headings *nested* in the `header` tag.
+        1. Change the `font-size` of the `h1` and `h2` BUT make sure to target only the headings *nested* in the `header` tag.
 
         **Hint!** Use a descendant selector.
       </script>
@@ -1398,7 +1405,7 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #Exercise: Update the footer (~15mins)
 
-        Make these changes in the 600px media query.
+        Make these changes in the `600px` media query.
 
         1. Make sure the socials and info span the full width of their parent.
         1. Align the social icons to the left.
@@ -1460,7 +1467,7 @@ selector { /* select the paragraph inside of the about element */
 
         So far we've been using `max-width` to declare our media queries and then overriding some of the styles as the screen sizes get smaller.
 
-        Another technique would be the *mobile-first* approach; start with the styles for the smallest mobile device, and use min-width specify styles screens as they get larger:
+        Another technique would be the *mobile-first* approach; start with the styles for the smallest mobile device, and use `min-width` specify styles screens as they get larger:
 
         ```
         @media (min-width: 601px) {
@@ -1490,7 +1497,7 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         # You did it!
 
-        ![mobile devices](framework/img/workshop/devices.gif)
+        ![Colorful mobile devices floating upward.](framework/img/workshop/devices.gif)
       </script>
     </section>
 
@@ -1512,7 +1519,7 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
         #What next?
 
-        There's more changes you can add to finesse your page. Take a look at **final.html** & **final.css** to get some more ideas!
+        There's more changes you can add to finesse your page. Take a look at `final.html` & `final.css` to get some more ideas!
 
         Experiment, talk to your mentors and have fun!
 
@@ -1540,7 +1547,7 @@ selector { /* select the paragraph inside of the about element */
       <script type="text/template">
       #Next Steps
 
-      Explore more Ladies Learning Code workshops at [http://canadalearningcode.ca](http://canadalearningcode.ca).
+      Explore more Ladies Learning Code workshops at [canadalearningcode.ca](http://canadalearningcode.ca).
 
       ##Getting your site online
 

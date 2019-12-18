@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/a11y/plugin.css">
   <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
   <link rel="shortcut icon" href="framework/img/favicon.ico">
 
@@ -262,7 +263,7 @@
         * used to wrap content to assign meaning to the web document
         * use *tags* to create HTML *elements*
 
-        ```xml
+        ```html
         <p>This is a paragraph.</p>
         ```
 
@@ -270,7 +271,7 @@
 
         Example:
 
-        ```xml
+        ```html
         <p>Paragraph with a <a href="#">link</a>.</p>
         ```
       </script>
@@ -300,7 +301,7 @@
         * defines the page title
         * displays in the browser's tab, search engine results and bookmarks
 
-        ```xml
+        ```html
         <head>
           <title>Page Title</title>
         </head>
@@ -320,7 +321,7 @@
 
         Content must be included only within the list item (`li`).
 
-        ```xml
+        ```html
         <ul>
           <li>Unordered list item</li>
           <li>Unordered list item</li>
@@ -341,7 +342,7 @@
         ##Headings
         There are 6 heading tags (`<h1>,<h2>,...,<h6>`) and they follow a hierarchical structure.
 
-        ```xml
+        ```html
         <h1>Most Important Heading</h1>
         <h2>Second Most Important Heading</h2>
         ```
@@ -351,7 +352,7 @@
         ##Paragraphs
 
         Created with the `<p></p>` tags.
-        ```xml
+        ```html
         <p>I'm a paragraph.</p>
         ```
       </script>
@@ -364,11 +365,11 @@
         There are some common HTML elements that require the addition of *attributes* to provide more information about the HTML element.
 
         **Links** use an `<a>` tag and an `href` *attribute* to specify where to link to.
-        ```
+        ```html
         <a href="http://website.com">link</a>
         ```
         **Images** use an `<img>` tag and the `src` attribute, to link to the image file. An `alt` attribute should also be added for accessiblity.
-        ```
+        ```html
         <img src="path/to/image.jpg" alt="alternative text">
         ```
         Also note that the image tag has no closing tag.
@@ -383,7 +384,7 @@
 
         These are like instructions that tell the browser how to get from point A (the current page) to point B (the new page or image).
 
-        ```
+        ```html
         <a href="/home">Home</a>
         <img href="/images/dogs/wishbone.jpg" alt="Wishbone solves another mystery!">
         ```
@@ -392,7 +393,7 @@
 
         These are more like an address: the browser may not know exactly where the address is, but it can look it up.
 
-        ```
+        ```html
         <a href="https://www.canadalearningcode.ca/">Canada Learning Code</a>
         <img src="https://placedog.net/500" alt="A nice dog!">
         ```
@@ -430,7 +431,7 @@
 
         *Tab* once to show that an element is nested.
 
-        ```xml
+        ```html
         <body>
           <div>
             <p>Paragraph 1.</p>
@@ -457,7 +458,7 @@
 
         Using whitespace helps to show which element is a child, parent or sibling of its surrounding elements.
 
-        ```xml
+        ```html
         <body> <!--this body element is a parent to the div element -->
           <div> <!--this div is a child of the body element, and a parent of the p elements-->
             <p>I am a sibling of the p below me! I am also a child of the div.</p>
@@ -480,7 +481,7 @@
 
         The syntax for comments start with `<!--` and ends with `-->`.
 
-        ```
+        ```html
         <!-- Comments should ALWAYS be included between the dashes. -->
         ```
       </script>
@@ -599,7 +600,7 @@
       <script type="text/template">
         #CSS Syntax
 
-        ```
+        ```css
         /* This is a CSS comment by the way */
         div {
           border: 3px solid #333;
@@ -697,7 +698,7 @@ selector { /* select the link */
 
       To use it, add it in the *opening* HTML tag. You can have more than one class for the same element.
 
-      ```xml
+      ```html
       <div class="wrapper">
         content here
       </div>
@@ -705,7 +706,7 @@ selector { /* select the link */
 
       In the CSS, a class selector starts with a leading period.
 
-      ```
+      ```css
       .wrapper {
         width: 1000px;
       }
@@ -770,7 +771,7 @@ selector { /* select the paragraph inside of the about element */
 
         <span class="note">**Pro tip!** For a shortcut, type "link" + <kbd>Tab</kbd> key. Ta da!</span>
 
-        ```
+        ```html
         <link rel="stylesheet" href="css/styles.css">
         ```
 
@@ -786,7 +787,7 @@ selector { /* select the paragraph inside of the about element */
 
         Look for the `body` selector, near the top of the `styles.css` file and change the image file name.
 
-        ```
+        ```css
         body {
           ...
           background: url(../images/background-4.jpg) no-repeat fixed;
@@ -1162,7 +1163,7 @@ selector { /* select the paragraph inside of the about element */
 
         The viewport `<meta>` tag **must** be included in the `<head>` of your HTML document to ensure the page responds on mobile devices.
 
-        ```xml
+        ```html
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         ```
 
@@ -1219,7 +1220,7 @@ selector { /* select the paragraph inside of the about element */
           * increase the profile image width;
           * make the image appear on the right.
 
-        ```
+        ```css
           flex-basis: 27%;
           margin-right: 3%;
         ```
@@ -1254,7 +1255,7 @@ selector { /* select the paragraph inside of the about element */
 
         Your width values may vary depending on your design preference.
 
-        ```
+        ```css
         @media (max-width: 800px) {
           /* this is here just for testing */
           body {
@@ -1345,7 +1346,7 @@ selector { /* select the paragraph inside of the about element */
         <textarea class="snippet">margin: 0;
         padding: 45px 64px;
         line-height: 1.4;
-        font-size: 32px;</textarea>
+        font-size: 33px;</textarea>
       </script>
     </section>
 
@@ -1469,7 +1470,7 @@ selector { /* select the paragraph inside of the about element */
 
         Another technique would be the *mobile-first* approach; start with the styles for the smallest mobile device, and use `min-width` specify styles screens as they get larger:
 
-        ```
+        ```css
         @media (min-width: 601px) {
           header h1 {
             font-size: 60px;
@@ -1597,6 +1598,7 @@ selector { /* select the paragraph inside of the about element */
 
   <script src="framework/scripts/plugins/markdown/marked.js"></script>
   <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/a11y/plugin.js"></script>
   <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="framework/scripts/llc.js"></script>

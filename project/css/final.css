@@ -16,7 +16,7 @@ http://christinatruong.com
 body {
   font-family: "Merriweather", serif;
   line-height: 1.5;
-  background: url(../images/background-4.jpg) no-repeat fixed 50%;
+  background: url(../images/background.jpg) no-repeat fixed 50%;
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -35,7 +35,25 @@ header h2 {
 header h1 {
   font-family: "Pacifico", Georgia, cursive;
   font-size: 80px;
+  color: #09549b;
 }
+
+header h1 span
+{
+  background-color: rgba(255, 255, 255, 0.50);
+  padding: 1px;
+}
+
+header h2 {
+  color: #09549b;
+}
+
+header h2 span
+{
+  background-color: rgba(255, 255, 255, 0.50);
+  padding: 1px;
+}
+
 
 header h2,
 section h1 {
@@ -59,10 +77,9 @@ section:nth-child(2n+2) {
 }
 
 a {
-  color: #2C808C;
+  color: #09549b;
 }
 a:hover {
-  color: white;
   text-decoration: none;
 }
 
@@ -99,7 +116,7 @@ header {
 }
 
 .profile h1 {
-  background: #2C808C;
+  background: #09549b;
   display: inline-block;
   padding: 10px 20px;
   transform: rotate(-4deg);
@@ -113,6 +130,7 @@ header {
   padding: 4px;
   border: 1px solid #ddd;
   border-radius: 50%;
+  max-width: 300px;
 }
 
 
@@ -135,43 +153,38 @@ header {
 
 /* WORK EXPERIENCE
 -------------------*/
-.work-experience .content-wrap {
+.process .content-wrap {
   flex-direction: column;
 }
 
-.work-experience .date {
-  margin: 5px 0 20px 0;
-  font-size: 12px;
-}
-
-.work-experience h3 {
+.process h3 {
   line-height: 1.25;
   font-size: 16px;
 }
 
-.work-experience a:hover {
+.process a:hover {
   color: black;
 }
 
-.work-experience .details {
+.process .details {
   flex: 0 0 30%;
   padding-right: 30px;
 }
 
-.work-experience .description {
+.process .description {
   font-size: 14px;
   margin-top: 5px;
 }
 
-.work-experience .description p:first-child {
+.process .description p:first-child {
   margin-top: 3px;
 }
 
-.company {
+.step {
   font-family: "Pacifico", Georgia, cursive;
   font-size: 20px;
   letter-spacing: 0.1em;
-  color: #2C808C;
+  color: #09549b;
 }
 
 /* EDUCATION
@@ -185,7 +198,8 @@ header {
 }
 
 .education h3 {
-  color: #2C808C;
+  color: #09549b;
+  font-weight: bold;
 }
 
 .education .item {
